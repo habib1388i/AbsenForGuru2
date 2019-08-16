@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMainSiswa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="100"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/photosiswa"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="15"
+                android:scaleType="fitCenter"
+                android:src="@drawable/photo_male_1" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="82"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvtitleDaftarsiswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Daftar siswa"/>
+                <TextView
+                    android:id="@+id/tvnamasiswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="nama siswa"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:id="@+id/alamatsiswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="alamat siswa"/>
+                <TextView
+                    android:id="@+id/tvemailsiswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="email"/>
+                <TextView
+                    android:id="@+id/tvdateAbsenSiswa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"
+                    android:text="19-06-2019"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
